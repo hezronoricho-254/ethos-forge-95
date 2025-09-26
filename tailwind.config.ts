@@ -57,6 +57,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Web3 specific colors
+        "neon-cyan": "hsl(var(--neon-cyan))",
+        "neon-purple": "hsl(var(--neon-purple))",
+        "success-green": "hsl(var(--success-green))",
+        "warning-orange": "hsl(var(--warning-orange))",
       },
       borderRadius: {
         lg: "var(--radius)",
