@@ -58,7 +58,7 @@ const featuredEvents = [
 
 const Index = () => {
   return (
-    <div className="min-h-screen gradient-hero">
+    <div className="min-h-screen gradient-hero safe-area-bottom">
       <Header />
       
       {/* Hero Section */}
@@ -78,11 +78,11 @@ const Index = () => {
             Experience the future of event participation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="gradient-primary glow-primary transition-bounce text-lg px-8">
+            <Button size="lg" className="gradient-primary glow-primary transition-bounce text-lg px-8 touch-manipulation active:scale-95">
               <Zap className="mr-2 h-5 w-5" />
               Explore Events
             </Button>
-            <Button variant="outline" size="lg" className="glass-card border-accent/30 text-lg px-8">
+            <Button variant="outline" size="lg" className="glass-card border-accent/30 text-lg px-8 touch-manipulation active:scale-95">
               <Shield className="mr-2 h-5 w-5" />
               Connect Wallet
             </Button>

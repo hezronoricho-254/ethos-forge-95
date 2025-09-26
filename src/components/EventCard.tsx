@@ -27,7 +27,7 @@ export const EventCard = ({ event }: EventCardProps) => {
   const soldPercentage = ((event.totalTickets - event.ticketsLeft) / event.totalTickets) * 100;
   
   return (
-    <Card className="glass-card overflow-hidden transition-smooth hover:glow-neon hover:-translate-y-2 group">
+    <Card className="glass-card overflow-hidden transition-smooth hover:glow-neon hover:-translate-y-2 group touch-manipulation active:scale-95">
       {/* Event Image */}
       <div className="relative h-48 overflow-hidden">
         <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
@@ -117,11 +117,11 @@ export const EventCard = ({ event }: EventCardProps) => {
 
         {/* Action Buttons */}
         <div className="flex gap-3">
-          <Button className="flex-1 gradient-primary glow-primary transition-bounce">
+          <Button className="flex-1 gradient-primary glow-primary transition-bounce touch-manipulation active:scale-95">
             <Zap className="h-4 w-4 mr-2" />
             Get NFT Ticket
           </Button>
-          <Button variant="outline" size="sm" className="glass-card border-accent/30">
+          <Button variant="outline" size="sm" className="glass-card border-accent/30 touch-manipulation active:scale-95">
             <TrendingUp className="h-4 w-4" />
           </Button>
         </div>

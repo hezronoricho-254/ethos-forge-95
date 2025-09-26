@@ -3,7 +3,7 @@ import { Header } from "@/components/Header";
 
 const Transparency = () => {
   return (
-    <div className="min-h-screen gradient-hero">
+    <div className="min-h-screen gradient-hero safe-area-bottom">
       <Header />
       <main className="container mx-auto px-4 py-8">
         <TransparencyLog />

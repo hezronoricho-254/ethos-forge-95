@@ -8,7 +8,7 @@ export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 glass-card border-b border-accent/20">
+    <header className="sticky top-0 z-50 glass-card border-b border-accent/20 safe-area-top">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -62,7 +62,7 @@ export const Header = () => {
           <Button
             variant="ghost"
             size="sm"
-            className="md:hidden"
+            className="md:hidden touch-manipulation active:scale-95"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
@@ -88,7 +88,7 @@ export const Header = () => {
               </div>
               
               <nav className="flex flex-col space-y-2">
-                <a href="#events" className="py-2 text-foreground hover:text-primary transition-smooth">
+                <a href="/" className="py-2 text-foreground hover:text-primary transition-smooth">
                   Events
                 </a>
                 <a href="#create" className="py-2 text-foreground hover:text-primary transition-smooth">
@@ -97,20 +97,20 @@ export const Header = () => {
                 <a href="#marketplace" className="py-2 text-foreground hover:text-primary transition-smooth">
                   Marketplace
                 </a>
-                <a href="#transparency" className="py-2 text-foreground hover:text-primary transition-smooth">
+                <a href="/transparency" className="py-2 text-foreground hover:text-primary transition-smooth">
                   Transparency
                 </a>
               </nav>
 
               <div className="flex flex-col space-y-2 pt-4 border-t border-accent/20">
-                <Button variant="ghost" size="sm" className="justify-start text-muted-foreground hover:text-foreground">
-                  <User className="h-4 w-4 mr-2" />
-                  Profile
-                </Button>
-                <Button className="gradient-primary glow-primary">
-                  <Wallet className="h-4 w-4 mr-2" />
-                  Connect Wallet
-                </Button>
+            <Button variant="ghost" size="sm" className="justify-start text-muted-foreground hover:text-foreground touch-manipulation active:scale-95">
+              <User className="h-4 w-4 mr-2" />
+              Profile
+            </Button>
+            <Button className="gradient-primary glow-primary touch-manipulation active:scale-95">
+              <Wallet className="h-4 w-4 mr-2" />
+              Connect Wallet
+            </Button>
               </div>
             </div>
           </div>

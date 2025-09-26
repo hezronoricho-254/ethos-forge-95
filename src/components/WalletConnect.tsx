@@ -90,7 +90,7 @@ export const WalletConnect = () => {
         <Button 
           variant="outline" 
           onClick={handleDisconnect}
-          className="w-full glass-card border-accent/30"
+          className="w-full glass-card border-accent/30 touch-manipulation active:scale-95"
         >
           Disconnect Wallet
         </Button>
